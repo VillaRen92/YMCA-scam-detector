@@ -4,6 +4,17 @@ import os
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
+    # --- HIDE STREAMLIT STYLE ---
+st.markdown("""
+    <style>
+    /* This hides the "Hamburger" menu (the three lines) */
+    #MainMenu {visibility: hidden;}
+    /* This hides the "Made with Streamlit" footer */
+    footer {visibility: hidden;}
+    /* This hides the top header bar completely */
+    header {visibility: hidden;}
+    </style>
+    """, unsafe_allow_html=True)
     page_title="Job Scam Detector",
     page_icon="🛡️",
     layout="centered"
