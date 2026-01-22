@@ -4,7 +4,11 @@ import os
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    # --- HIDE STREAMLIT STYLE ---
+    page_title="Job Scam Detector",
+    page_icon="🛡️",
+    layout="centered"
+)
+# --- HIDE STREAMLIT STYLE ---
 st.markdown("""
     <style>
     /* This hides the "Hamburger" menu (the three lines) */
@@ -15,11 +19,6 @@ st.markdown("""
     header {visibility: hidden;}
     </style>
     """, unsafe_allow_html=True)
-    page_title="Job Scam Detector",
-    page_icon="🛡️",
-    layout="centered"
-)
-
 # --- YMCA RED STYLING ---
 st.markdown("""
     <style>
